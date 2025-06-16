@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Катталуу</title></head>
+<body>
+  <h2>Катталуу</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Катталуу</button>
+  </form>
+  <a href="{% url 'login' %}">Кирүү</a>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Тапшырма тууралуу кеңири маалымат</title></head>
+<body>
+  <h2>{{ task.title }}</h2>
+  <p><strong>Тапшырманын аталышы:</strong> {{ task.name_task }}</p>
+  <p><strong>Программист:</strong> {{ task.programmer.name }}</p>
+  <p><strong>Проект:</strong> {{ task.project.title }}</p>
+  <p><strong>Уровень:</strong> {{ task.get_level_display }}</p>
+  <p><strong>Дедлайн:</strong> {{ task.deadline }}</p>
+  <p><strong>Статус:</strong> {{ task.status }}</p>
+  <a href="{% url 'home' %}">← Артка кайтуу</a>
+</body>
+</html>

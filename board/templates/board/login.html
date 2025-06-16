@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Кирүү</title></head>
+<body>
+  <h2>Кирүү</h2>
+  <form method="post">
+    {% csrf_token %}
+    <label>Колдонуучу аты:</label><br>
+    <input type="text" name="username"><br>
+    <label>Сыр сөз:</label><br>
+    <input type="password" name="password"><br><br>
+    <button type="submit">Кирүү</button>
+  </form>
+  <a href="{% url 'register' %}">Катталуу</a>
+
+</body>
+</html>

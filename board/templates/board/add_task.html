@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Жаңы тапшырма кошуу</title></head>
+<body>
+  <h2>Тапшырма кошуу</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Сактоо</button>
+  </form>
+  <a href="{% url 'home' %}">← Артка кайтуу</a>
+</body>
+</html>
